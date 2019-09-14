@@ -49,10 +49,6 @@ spec:
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
-        resources:
-          requests:
-            memory: "20Mi"
-            cpu: "5m"
 ---
 ##################################################################################################
 # Reviews service
@@ -92,10 +88,6 @@ spec:
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
-        resources:
-          requests:
-            memory: "20Mi"
-            cpu: "5m"
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
@@ -118,10 +110,6 @@ spec:
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
-        resources:
-          requests:
-            memory: "20Mi"
-            cpu: "5m"
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
@@ -144,10 +132,6 @@ spec:
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
-        resources:
-          requests:
-            memory: "20Mi"
-            cpu: "5m"
 ---
 ##################################################################################################
 # Productpage services
@@ -188,8 +172,4 @@ spec:
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
-        resources:
-          requests:
-            memory: "20Mi"
-            cpu: "5m"
 ---
